@@ -1,34 +1,32 @@
-import Chart from "../../components/chart/Chart";
-import Featured from "../../components/featured/Featured";
 import Navbar from "../../components/navbar/Navbar";
-import Sidebar from "../../components/sidebar/Sidebar";
-import Tables from "../../components/tables/Tables";
-import Widget from "../../components/widget/Widget";
-import "./home.scss";
+import Header from "../../components/header/Header";
+import "./home.css"
+import Featured from "../../components/featured/Featured";
+//import PropertyList from "../../components/propertyList/PropertyList";
+import FeaturedProperties from "../../components/featuredProperties/FeaturedProperties";
+import MailList from "../../components/mailList/MailList";
+import Footer from "../../components/footer/Footer";
+import Attraction from "../../components/attraction/Attraction";
 
 const Home = () => {
-
-  const statusFilter = ["Pending","Checked"];
-
   return (
     <div>
-      <div className="home">
-        <Sidebar />
-        <div className="homeContainer">
-          <Navbar />
-          <div className="widgets">
-            <Widget type="users" />
-            <Widget type="packages" />
-            <Widget type="enquiries" />
-          </div>
-          <div className="listContainer">
-            <div className="listTitle">Enquiries</div>
-            <Tables statusFilter={statusFilter}/>
-          </div>
-        </div>
+      <Navbar/>
+      <Header/>
+      <div className="homeContainer">
+        <h1 className="homeTitle">Package Type</h1>
+        <Featured />
+        {/* <h1 className="homeTitle">Choose from the best to experience the best!</h1>
+        <PropertyList /> */}
+        <h1 className="homeTitle">Packages We Offer!</h1>
+        <FeaturedProperties/>
+        <h1 className="homeTitle">Why Choose Us?</h1>
+        <Attraction/>
+        <MailList/>
+        <Footer/>
       </div>
     </div>
   )
 }
 
-export default Home
+export default Home;

@@ -1,0 +1,81 @@
+.vAContainer{
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 20px;
+}
+
+.vAContainer>h1{
+    color: #9d1313;
+}
+
+.vAItemLink{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: inherit;
+    text-decoration: none;
+}
+.vAPackages{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.vAItem{
+    padding: 5px;
+    flex: 0 0 calc(25% - 10px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .vAItem{
+        flex-basis: calc(50% - 10px);
+    }
+}
+
+@media (max-width: 480px) {
+    .vAItem{
+        flex-basis: 100%;
+    }
+}
+
+.vAItem:hover{
+    transform: translateY(-5px);
+}
+
+.vAImg{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.vAName, .vADestination, .vADuration, .vAPrice{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.vAPrice{
+    color: #1406d1;
+}
+
+.vAItem:hover .vAName, .vAItem:hover .vADestination, .vAItem:hover .vADuration, .vAItem:hover .vAPrice{
+    color: #9d1313;
+}
+
+.vAItem:hover .vAPrice{
+    color: #f00;
+}

@@ -1,0 +1,112 @@
+.packageContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.packageWrapper{
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    gap: 20px;
+}
+
+.packageSearch{
+    flex: 1;
+    background-color: #d85858;
+    padding: 10px;
+    border-radius: 10px;
+    position: sticky;
+    top: 10px;
+    height: max-content;
+}
+
+.psTitle{
+    font-size: 20px;
+    color: #b30606;
+    margin-bottom: 10px;
+}
+
+.psItem{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.psItem>label{
+    font-size: 12px;
+}
+
+.psItem>input{
+    height: 30px;
+    border: none;
+    padding: 5px;
+}
+
+.packageMenu{
+    color: #b30606;
+    cursor: pointer;
+    border: none;
+    /* appearance: none; */
+    width: max-content;
+    cursor: pointer;
+}
+
+.psItem>span{
+    height: 30px;
+    background-color: white;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.psOptions{
+    padding: 10px;
+}
+
+.psOptionItem{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    color: #b30606;
+    font-size: 12px;    
+}
+
+.psOptionInput{
+    width: 50px;
+}
+
+.psOptionCount{
+    align-items: center;
+}
+
+.psOptionCountButton{
+    color: rgb(14, 141, 14);
+    background-color: rgb(176, 192, 176);
+    border: 0.1px solid rgb(255, 255, 255);
+}
+.psOptionCountButton.decrement{
+    color: rgb(255, 0, 0);
+    /* background-color: rgb(190, 198, 190); */
+}
+
+.psOptionInputMenu{
+    width: 30px;
+    text-align: center;    
+}
+
+.packageSearch>button{
+    padding: 10px;
+    background-color: #b30606;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-weight: 500;
+    width: 100%;
+    cursor: pointer;
+}
+.packageResult{
+    flex: 3;
+}

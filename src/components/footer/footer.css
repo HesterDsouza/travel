@@ -1,0 +1,34 @@
+.footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+      
+}
+
+.review{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.reviewContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;    
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+.reviewIcon{
+    font-size: 18px;
+}
+
+.fText{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 15px;
+    color: #b30606;
+}

@@ -1,139 +1,32 @@
-import React, { useContext} from 'react'
-import Home from './pages/home/Home';
-import {BrowserRouter, Routes, Route, Navigate} from "react-router-dom";
-import { ToastContainer } from 'react-toastify';
-import Login from './pages/login/Login';
-import Packages from './pages/packages/Packages';
-import Package from './pages/package/Package';
-import New from './pages/new/New';
-//import { packageInputs, productInputs, userInputs } from './formSource';
-import "./style/dark.scss";
-import { DarkModeContext } from './context/darkModeContext';
-//import Register from './pages/register/Register';
-import { AuthContext } from './context/AuthContext';
-import { enquiryColumns, packageColumns, userColumns } from './dataTableSource';
-import NewPackage from './pages/newPackage/NewPackage';
-import Profile from './pages/profile/Profile';
-import Enquiry from './pages/enquiry/Enquiry';
-import Notifications from './pages/notifications/Notifications';
-import User from './pages/user/User';
-import EnquiryPage from './pages/enquiryPage/EnquiryPage';
-import Checked from './pages/checked/Checked';
-import Contacted from './pages/contacted/Contacted';
-import Assigned from './pages/assigned/Assigned';
+import {BrowserRouter, Routes, Route,} from "react-router-dom";
+import Home from "./pages/home/Home";
+import Package from "./pages/packages/Package";
+import Packages from "./pages/package/Packages";
+import Contact from "./pages/contact/Contact";
+import Login from "./pages/login/Login";
+import Register from "./pages/register/Register";
+import ViewAllPackages from "./pages/viewAll/ViewAllPackages";
+import Enquiry from "./components/enquiry/Enquiry";
+import ForgotPassword from "./components/forgotPassword/ForgotPassword";
+import AboutUs from "./pages/aboutUs/AboutUs";
 
-const App = () => {
-
-    const {darkMode} = useContext(DarkModeContext);
-
-    const ProtectedRoute = ({children}) =>{
-        const {user} = useContext(AuthContext);
-
-        if(!user){
-            return <Navigate to="/login"/>;
-        }
-
-        return children;
-    }
-
-  return (
-    <div className={darkMode ? "app dark" :"app"}>
-        <BrowserRouter>
-            <Routes>
-                <Route path="/">
-                    <Route path="login" element={<Login />}/>
-                    <Route 
-                        index 
-                        element = 
-                            {<ProtectedRoute>
-                                <Home />
-                            </ProtectedRoute>} 
-                    />
-                    {/* <Route path="register" element={<Register />}/> */}
-                    <Route path="users">
-                        <Route index element={<ProtectedRoute>
-                                <Packages columns={userColumns}/>
-                            </ProtectedRoute>}/>
-                        <Route path=":userId" element={<ProtectedRoute>
-                                <User />
-                            </ProtectedRoute>}/>
-                        <Route path="new" element=
-                            {
-                                <ProtectedRoute>
-                                    <New />
-                                </ProtectedRoute>
-                            }/>
-                        <Route path="profile" element = {
-                                <ProtectedRoute>
-                                    <Profile />
-                                </ProtectedRoute>
-                            }/>    
-                    </Route>
-                    <Route path="packages">
-                        <Route index element={<ProtectedRoute>
-                                <Packages columns={packageColumns}/>
-                            </ProtectedRoute>}/>
-                        <Route path=":packageId" element={<ProtectedRoute>
-                                <Package />
-                            </ProtectedRoute>}/>
-                            <Route path="new" element=
-                            {
-                                <ProtectedRoute>
-                                    <NewPackage />
-                                </ProtectedRoute>
-                            }/>
-                    </Route>
-                    <Route path="enquiry">
-                        <Route index element=
-                            {
-                                <ProtectedRoute>
-                                    <Enquiry columns={enquiryColumns}/>
-                                </ProtectedRoute>
-                            }/>
-                        <Route path=":enquiryID" element= {
-                            <ProtectedRoute>
-                                <EnquiryPage />
-                            </ProtectedRoute>
-                        }/>
-                    </Route>
-                    <Route path="notifications">
-                        <Route index element=
-                            {
-                                <ProtectedRoute>
-                                    <Notifications />
-                                </ProtectedRoute>
-                            }/>
-                    </Route>
-                    <Route path="checked">
-                        <Route index element=
-                            {
-                                <ProtectedRoute>
-                                    <Checked />
-                                </ProtectedRoute>
-                            }/>
-                    </Route>
-                    <Route path="contacted">
-                        <Route index element=
-                            {
-                                <ProtectedRoute>
-                                    <Contacted />
-                                </ProtectedRoute>
-                            }/>
-                    </Route>
-                    <Route path="assignedTo">
-                        <Route index element=
-                            {
-                                <ProtectedRoute>
-                                    <Assigned />
-                                </ProtectedRoute>
-                            }/>
-                    </Route>
-                </Route>        
-            </Routes>
-        </BrowserRouter>
-        <ToastContainer />
-    </div>
-  )
+function App(){
+  return(
+    <BrowserRouter>
+      <Routes>
+        <Route path = "/" element={<Home />}/>
+        <Route path = "/package" element={<Package />}/>
+        <Route path = "/package/:id" element={<Packages/>} />
+        {/* <Route path = "/contact" element={<Contact/>}/> */}
+        <Route path="/aboutUs" element={<AboutUs />} />
+        <Route path = "/login" element={<Login/>}/>
+        <Route path = "/register" element={<Register/>}/>
+        <Route path = "/viewAll" element={<ViewAllPackages/>}/>
+        <Route path = "/enquiry" element={<Enquiry/>}/>
+        <Route path="/forgot_password" element={<ForgotPassword />} /> 
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;

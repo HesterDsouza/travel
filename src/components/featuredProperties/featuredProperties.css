@@ -1,0 +1,63 @@
+.fp{
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 20px;
+}
+
+.fpItem{
+    padding: 5px;
+    flex: 1;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.fpItem:hover{
+    transform: translateY(-5px);
+}
+
+.fpImg{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.fpDetails {
+    flex-grow: 1; /* Allow details to expand to fill available space */
+  }
+  
+  .fpName,
+  .fpDestination,
+  .fpDuration,
+  .fpPrice {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .fpPrice {
+    color: #1406d1;
+  }
+  
+  /* Hover animation for text */
+  .fpItem:hover .fpName,
+  .fpItem:hover .fpDestination,
+  .fpItem:hover .fpDuration,
+  .fpItem:hover .fpPrice {
+    color: #9d1313;
+  }
+  
+  /* Hover animation for price */
+  .fpItem:hover .fpPrice {
+    color: #f00; /* Change to your desired hover color */
+  }

@@ -1,0 +1,158 @@
+.header{
+   background-color: #d53535;
+   color: white;
+   display: flex;
+   justify-content: center;
+   position: relative;
+}
+
+.headerContainer{
+    width: 100%;
+    max-width: 1024px;
+    margin: 20px 0px 100px 0px;
+}
+
+.headerContainer.listMode{
+    margin: 20px 0px 0 0px;
+}
+.headerList{
+    display: flex;
+    gap: 40px;
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+.headerListItem{
+    display: flex;
+    align-items: center;
+    width: 150px;
+    gap: 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.headerTitle{
+    font-size: 17px;
+}
+
+.headerListItem:hover{
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #b30606;
+    transition: 0.3s ;
+}
+
+.headerListItem.right{
+    margin-left: 350px;
+}
+
+.headerDesc{
+    margin: 20px 0px;
+}
+
+.signUpPromo{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.headerSearch{
+    height: 30px;
+    background-color: white;
+    border: 3px solid #b30606;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0px;
+    border-radius: 40px;
+    position: absolute;
+    bottom: -25px;
+    width: 100%;
+    max-width: 1024px;
+}
+
+.headerIcon{
+    color: #d53535;
+}
+
+.headerSearchItem{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.headerSearchItem>button{
+    width: 80px;
+    font-size: 15px;
+    border:  1px solid #b30606;
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+    background-color: #2688be;
+    border-radius: 30px;
+}
+
+.headerSearchInput{
+    border: none;
+    outline: none;
+}
+
+.headerSearchMenu{
+    color: #b30606;
+    cursor: pointer;
+    border: none;
+    /* appearance: none; */
+    width: max-content;
+    cursor: pointer;
+}
+.message{
+    color: #b30606;
+}
+.headerSearchText{
+    color: #b30606;
+    cursor: pointer;
+}
+
+.date{
+    position: absolute;
+    top: 50px;
+    z-index: 2;
+}
+
+.options{
+    position: absolute;
+    top: 50px;
+    background-color: white;
+    color: gray;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 1);
+    z-index: 2;
+}
+
+.optionItem{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.optionCounter{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    color: black;
+}
+
+.optionCounterButton{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #620505;
+    color: #b30606;
+    cursor: pointer;
+    background-color: white;
+}
+
+.optionCounterButton:disabled{
+    cursor: not-allowed;
+}

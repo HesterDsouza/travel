@@ -1,0 +1,72 @@
+.contentWidth {
+    width: 100%;
+    max-width: 1024px; /* Set maximum width */
+    margin: 0 auto; /* Center-align content */
+}
+
+/* Container styles */
+.aboutUsContainer {
+    width: 100%;
+    max-width: 1024px; /* Set maximum width for better readability */
+    text-align: center; /* Center-align content */
+    background-color: rgba(51, 55, 55, 0.566); /* Light blue background with opacity */
+    padding: 10px;
+    margin-top: 10px; /* Increase top margin for separation */
+    border-radius: 10px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.197); /* Add a subtle box shadow */
+    position: relative; /* Position relative for absolute positioning of image */
+    font-weight: bold;
+}
+
+.aboutUsContainer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg?w=1060&t=st=1712728594~exp=1712729194~hmac=9093fdb86f679a7d476878fba65f8362285e2013e26b2bfc939e8551f2bc1a14');
+    background-size: cover;
+    background-position: center;
+    opacity: 80%; /*Set opacity for the background image*/
+    z-index: -1; /* Ensure the background image stays behind other content */
+    border-radius: 10px;
+}
+
+/* .aboutUsContainer:hover{
+    opacity: 5%;
+} */
+
+/* Title styles */
+.title {
+    color: #43b1f5; /* Dark blue color for the title */
+    margin-bottom: 10px;
+}
+
+/* Content styles */
+.content {
+    color: #95d7ff; /* Dark gray color for the content */
+    line-height: 1.2; /* Improve readability with increased line height */
+    font-size: 18px;
+}
+
+/* Card styles */
+/* .card {
+    width: 100%;
+    max-width: 800px; Set maximum width
+    border-radius: 10px;
+    overflow: hidden; Ensure the image stays within the card boundaries
+    margin-top: 10px; Increase top margin for separation
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.aboutUsImage {
+    width: 100%; Ensure the image fills the card
+    border-radius: 10px;
+    transition: transform 0.4s ease-in-out;
+}
+
+.aboutUsImage:hover {
+    transform: scale(1.3);
+} */
