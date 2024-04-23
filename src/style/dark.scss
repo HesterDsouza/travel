@@ -1,0 +1,305 @@
+.app.dark{
+    background-color: #222;
+    color: rgb(156, 156, 156);
+
+    // .chartGrid{
+    //     stroke: rgb(230, 225, 225);
+    // }
+
+    .table{
+        background-color: #222;
+        box-shadow: 2px 2px 6px 4px #cbc7c73b;
+
+        .noRows{
+            color: #ccc;
+        }
+        
+        .tableCell{
+            color: #ccc;
+            border-color: gray;
+
+            .status{
+                // padding: 5px;
+                // border-radius: 5px;
+        
+                &.Approved{
+                    color: rgb(0, 255, 0);
+                    background-color: rgba(83, 255, 83, 0.15)
+                }
+                &.Pending{
+                    color: rgb(255, 195, 42);
+                    background-color: rgba(255, 195, 42, 0.150);
+                }
+            }
+        }
+    }
+
+    .navbar{
+        color: #999;
+        border-color: #333;
+
+        .search{
+            border-color: gray;
+            box-shadow: 2px 2px 6px 4px #cbc7c73b;
+
+            input{
+                color: #999;
+            }
+        }
+    }
+
+    .sidebar{
+        background-color: #222;
+        border-color: #333;
+
+        &.package{
+            margin-bottom: -758px;
+        }
+
+        .top{
+            .logo{
+                color: #999;
+            }
+        }
+
+        hr{
+            border-color: #333;
+            
+        }
+
+        ul{
+            li{
+                &:hover{
+                    background-color: #333;
+                }
+
+                .icon{
+                    color: #999;
+                }
+            }
+        }
+    }
+
+    .widget{
+        box-shadow: 2px 2px 6px 4px #cbc7c73b;
+    }
+
+    .user{
+        .userContainer{
+            .profile{
+                .userBox{
+                    box-shadow: 2px 2px 6px 4px #cbc7c73b;
+
+                    .title{
+                        color: #999;
+                    }
+                }
+
+                .enquiriesBox{
+                    box-shadow: 2px 2px 6px 4px #cbc7c73b;
+                }
+            }
+        }
+    }
+
+    .dataTable{
+        border: gray;
+
+        .dataGrid{
+            color: #ccc;
+            border: none;
+
+            .MuiDataGrid-main.css-204u17-MuiDataGrid-main{
+                .MuiDataGrid-columnHeaders.MuiDataGrid-withBorderColor.css-1iyq7zh-MuiDataGrid-columnHeaders{
+                    .MuiDataGrid-columnHeadersInner.css-gl260s-MuiDataGrid-columnHeadersInner{
+                        .css-yrdy0g-MuiDataGrid-columnHeaderRow{
+                            .MuiDataGrid-columnHeader.MuiDataGrid-columnHeader--alignCenter.MuiDataGrid-withBorderColor.MuiDataGrid-columnHeaderCheckbox{
+                                .MuiDataGrid-columnHeaderDraggableContainer{
+                                    .MuiDataGrid-columnHeaderTitleContainer{
+                                        .MuiDataGrid-columnHeaderTitleContainerContent{
+                                            .MuiButtonBase-root.MuiCheckbox-root.MuiCheckbox-colorPrimary.MuiCheckbox-sizeMedium.PrivateSwitchBase-root.MuiCheckbox-root.MuiCheckbox-colorPrimary.MuiCheckbox-sizeMedium.MuiCheckbox-root.MuiCheckbox-colorPrimary.MuiCheckbox-sizeMedium.MuiDataGrid-checkboxInput.css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root{
+                                                .MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.css-i4bv87-MuiSvgIcon-root{
+                                                    color: #ccc;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .MuiDataGrid-virtualScroller.css-qvtrhg-MuiDataGrid-virtualScroller{
+                    .MuiDataGrid-virtualScrollerContent.css-1kwdphh-MuiDataGrid-virtualScrollerContent{
+                        .MuiDataGrid-virtualScrollerRenderZone.css-s1v7zr-MuiDataGrid-virtualScrollerRenderZone{
+                            .MuiDataGrid-row{
+                                .MuiDataGrid-cellCheckbox.MuiDataGrid-cell--withRenderer.MuiDataGrid-cell.MuiDataGrid-cell--textCenter.MuiDataGrid-withBorderColor{
+                                    .MuiButtonBase-root.MuiCheckbox-root.MuiCheckbox-colorPrimary.MuiCheckbox-sizeMedium.PrivateSwitchBase-root.MuiCheckbox-root.MuiCheckbox-colorPrimary.MuiCheckbox-sizeMedium.MuiCheckbox-root.MuiCheckbox-colorPrimary.MuiCheckbox-sizeMedium.MuiDataGrid-checkboxInput.css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root{
+                                        .MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.css-i4bv87-MuiSvgIcon-root{
+                                            color: #ccc;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .viewButton{
+                color: #ccc;
+                border: none;
+                transition: 0.95s background-color;
+                
+                &:hover{
+                    background-color: #5252f1;
+                }
+
+            }
+            
+            .MuiDataGrid-footerContainer.MuiDataGrid-withBorderColor.css-wop1k0-MuiDataGrid-footerContainer{
+                .MuiTablePagination-root.css-rtrcn9-MuiTablePagination-root{
+                    .MuiToolbar-root.MuiToolbar-gutters.MuiToolbar-regular.MuiTablePagination-toolbar.css-78c6dr-MuiToolbar-root-MuiTablePagination-toolbar{
+                        color: #ccc;
+
+                        .MuiInputBase-root.MuiInputBase-colorPrimary.MuiTablePagination-input.css-16c50h-MuiInputBase-root-MuiTablePagination-select{
+                            .MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.MuiSelect-icon.MuiTablePagination-selectIcon.MuiSelect-iconStandard.css-pqjvzy-MuiSvgIcon-root-MuiSelect-icon{
+                                color: #ccc;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .deleteButton{
+                color: #ccc;
+                border: none;
+                transition: 0.95s background-color;
+
+                &:hover{
+                    background-color: #9d1414;
+                }
+            }
+
+            .cellWithStatus{
+                color: gray;
+                border: none;
+
+                &.active{
+                    background-color: rgba(52, 255, 52, 0.245);
+                }
+        
+                &.passive{
+                    background-color: rgba(255, 50, 50, 0.245);
+                }
+        
+                &.pending{
+                    background-color: rgba(254, 211, 103, 0.245);
+                }
+            }
+        }
+
+        .assignTo{
+            select{
+                color: #ccc;
+            }
+        }
+    }
+
+    input{
+        background-color: transparent;
+    }
+
+    .enquiryPage{
+        .enquiryPageContainer{
+            .enquiries{
+                .enquiryBox{
+                    .title{
+                        color: #999;
+                    }
+                }
+            }
+        }
+    }
+
+    .new{
+        .newContainer{
+            .top{
+                box-shadow: 2px 2px 6px 4px #cbc7c73b;
+            }
+
+            .bottom{
+                .right{
+                    .formInput{
+                        .mainPackageSelect{
+                            color:#999;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .package{
+        background-color: #222;
+
+        .packageContainer{
+            
+            .top{
+                background-color: #222;
+            }
+
+            .details{
+                background-color: #222;
+
+                .detailItem{
+                    input{
+                        color: white;
+                        background-color: #555;
+                    }
+                }
+            }
+        }
+    }
+
+    .profile{
+        .profileContainer{
+            .profileContent{
+                .profileBox{
+                    box-shadow: 2px 2px 6px 4px #cbc7c73b;
+
+                    .editButton{
+                        color: #3700ff;
+                        background-color: #4025a245;
+
+                        &:hover{
+                            background-color: #2a00c345;
+                        }
+                    }
+
+                    .item{
+                        .details{
+                            .detailItem{
+                                .itemValue{
+                                    input[type="text"]{
+                                        color: #ccc;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .save{
+                        color: #3700ff;
+                        background-color: #4025a245;
+
+                        &:hover{
+                            background-color: #2a00c345;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

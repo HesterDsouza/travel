@@ -1,0 +1,133 @@
+.dataTable{
+    height: 600px;
+    padding: 20px;
+    // width: max-content;
+
+    .dataTableTitle{
+        width: 100%;
+        font-size: 24px;
+        color: rgb(203, 178, 178);
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        p{
+            cursor: pointer;
+        }
+
+        .link{
+            text-decoration: none;
+            color: green;
+            font-size: 16px;
+            font-weight: 400;
+            cursor: pointer;
+            border: 1px solid green;
+            padding: 5px;
+            border-radius: 5px;
+        }
+    }
+
+    // .cellWithImg{
+    //     display: flex;
+    //     align-items: center;
+
+    //     .cellImg{
+    //         width: 45px;
+    //         height: 45px;
+    //         border-radius: 50%;
+    //         object-fit: cover;
+    //         margin-right: 20px;
+    //     }
+    // }
+
+    .dataGrid{
+
+        .status{
+            display: inline-flex;
+            align-items: center;
+            padding: 5px;
+            border-radius: 5px;
+            width: auto;
+    
+            &.checked{
+                color: goldenrod;
+                background-color: rgba(218, 165, 32, 0.150);
+                flex: none
+            }
+    
+            &.pending{
+                color: red;
+                background-color: rgba(255, 0, 0, 0.150);
+            }
+    
+            &.contacted{
+                color: green;
+                background-color: rgba(0, 255, 0, 0.150);
+            }
+        }
+    
+        .cellAction{
+            display: flex;
+            align-items: center;
+            gap: 15px;
+    
+            .viewButton{
+                padding: 3px 5px;
+                border-radius: 5px;
+                color: black;
+                // border: 1px dotted rgba(0, 0, 139, 0.593);
+                border: none;
+                outline: none;
+                cursor: pointer;
+                transition: 0.8s background-color;
+    
+                &:hover{
+                    background-color: #3f3ffbd3;
+                }
+            }
+            .deleteButton{
+                padding: 3px 5px;
+                border-radius: 5px;
+                border: none;
+                color: black;
+                // border: 1px dotted rgba(139, 0, 0, 0.593);
+                cursor: pointer;
+                transition: 0.8s background-color;
+    
+                &:hover{
+                    background-color: #ff0000d3;
+                }
+            }
+        }
+    }
+
+    .assignTo{
+        display: flex;
+        gap: 10px;
+        margin-top: 15px;
+        align-items: center;
+
+        select, button {
+            font-size: 18px;
+            width: max-content;
+            align-items: center;
+            border: none;
+            cursor: pointer;
+        }
+
+        select{
+            border-bottom: 1px solid gray;
+            background: transparent;
+        }
+
+        button{
+            border-radius: 5px;
+            background-color: #807ef7;
+
+            &:hover{
+                background-color:#5451df;
+            }
+        }
+    }    
+}

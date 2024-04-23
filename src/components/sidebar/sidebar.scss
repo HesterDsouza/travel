@@ -1,0 +1,95 @@
+.sidebar{
+    flex: 1;
+    border-right: 0.5px solid rgb(214, 210, 210);
+    min-height: 100vh;
+    background-color: white;
+    // margin-bottom: -758px;
+
+    .top{
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .logo{
+            font-size: 20px;
+            font-weight: bold;
+            color: #2b07df;
+        }
+    }
+
+    hr{
+        height: 0;
+        border: 0.5px solid rgb(214, 210, 210);
+        // margin-bottom: -758px;
+    }
+
+    .center{
+        padding-left: 10px;
+
+        ul{
+            list-style:  none;
+            margin: 0;
+            padding: 0;
+
+            .title{
+                font-size: 14px;
+                font-weight: bold;
+                color: #9e9494;
+                margin-top: 15px;
+                margin-bottom: 5px;
+            }
+
+            li{
+                display: flex;
+                align-items: center;
+                padding: 5px;
+                cursor: pointer;
+                transition: 0.6s background-color;
+
+                &:hover{
+                    background-color: #ece7f6;
+                    // transform: translateY(-5px);
+                }
+
+                .icon{
+                    font-size: 18px;
+                    color: #7460d9;
+
+                }
+
+                span{
+                    font-size: 13px;
+                    font-weight: 600;
+                    color: #aaa1a1;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+
+    .bottom{
+        display: flex;
+        align-items: center;
+        margin: 10px;
+        
+        .colorOptions{
+            width: 20px;
+            height: 20px;
+            border-radius: 5px;
+            border: 1px solid #7460d9;
+            cursor: pointer;
+            margin: 5px;
+
+            &:nth-child(1){
+                background-color: whitesmoke;
+            }
+            &:nth-child(2){
+                background-color: rgb(1, 1, 42);
+            }
+            &:nth-child(3){
+                background-color: rgb(2, 61, 44);
+            }
+        }
+    }
+}

@@ -1,0 +1,83 @@
+.profile{
+    display: flex;
+    flex: 1;
+
+    .profileContainer{
+        flex: 5;
+
+        .profileContent{
+            padding: 20px;
+            display: flex;
+            gap: 20px;
+
+            .profileBox{
+                box-shadow: 4px 6px 10px 4px #2e2d2d3b;
+                width: max-content;
+                padding: 10px;
+                position: relative;
+
+                .title{
+                    font-size: 20px;
+                    color: rgb(169, 159, 159);
+                    margin-bottom: 20px;
+                }
+
+                .editButton{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    padding: 10px;
+                    font-size: 20px;
+                    color: #3100e0;
+                    background-color: #4918fa2c;
+                    cursor: pointer;
+                    border-radius: 0 0 0 5px;
+
+                    &:hover{
+                        background-color: #3c19b957;
+                    }
+                }
+
+                .item{
+                    display: flex;
+                    gap: 20px;
+
+                    .details{
+                        .detailItem{
+                            margin-bottom: 10px;
+                            font-size: 18px;
+
+                            .itemKey{
+                                font-weight: bold;
+                                color: gray;
+                                margin-right: 5px;
+                            }
+
+                            .itemValue{
+                                font-weight: 300;
+
+                                input[type="text"]{
+                                    width: 200px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .save{
+                    padding: 5px;
+                    font-size: 14px;
+                    color: #3100e0;
+                    background-color: #4918fa2c;
+                    cursor: pointer;
+                    border-radius: 5px;
+                    border: none;
+
+                    &:hover{
+                        background-color: #3c19b957;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,86 @@
+.user{
+    display: flex;
+    flex: 1;
+
+    .userContainer{
+        flex: 5;
+
+        .profile{
+            padding: 20px;
+            display: flex;
+            gap: 20px;
+            //position: relative;
+
+            .userBox{
+                box-shadow: 4px 6px 10px 4px #2e2d2d3b;
+                padding: 10px;
+    
+                .title{
+                    font-size: 30px;
+                    color: rgb(47, 46, 46);
+                    margin-bottom: 10px;
+                }
+
+                .adminBtn{
+                    float: right;
+                    border: none;
+                    font-size: 18px;
+                    width: 75px;
+                    margin-top: -10px;
+                    margin-right: -10px;
+                    border-radius: 0px 0px 0px 5px;
+                    cursor: pointer;
+                    font-weight: bold;
+                    font-family: 'Harrington';
+                    
+                    &.makeAdmin{
+                        background-color: #72f19c;
+                        
+                        &:hover{
+                            background-color: #30f572;
+                        }
+                    }
+                    
+                    &.removeAdmin{
+                        background-color: #f36363;
+                        
+                        &:hover{
+                            background-color: #f82b2b;
+                        }
+                    }
+
+                }
+    
+                .userDetails{
+                    display: flex;
+                    gap: 20px;
+                    flex-direction: column;
+    
+                    .detailItem{
+                        margin-bottom: 10px;
+                        font-size: 18px;
+    
+                        .itemKey{
+                            font-weight: bold;
+                            color: gray;
+                            margin-right: 5px;
+                        }
+    
+                        .itemValue{
+                            font-weight: 300;    
+                        }
+                    }
+                }
+            }
+
+            .enquiriesBox{
+                box-shadow: 4px 6px 10px 4px #2e2d2d3b;
+                padding: 10px;
+
+                .enquiryTitle{
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+}
